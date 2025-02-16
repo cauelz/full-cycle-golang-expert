@@ -13,13 +13,24 @@ var (
 )
 
 func main() {
-	valoresPadrão()
+	valoresPadrao()
+	shortHand()
 }
 
-func valoresPadrão() {
+func valoresPadrao() {
 	println("Valores padrão em GO")
 	println(nome)
 	println(idade)
 	println(ehMaiorDeIdade)
 	println(preco)
+}
+
+func shortHand() {
+	nome, idade, ativo := "Carlos", 30, true
+
+	println("Short Hand")
+	println(nome)
+	println(idade)
+	println(ativo)
+
 }

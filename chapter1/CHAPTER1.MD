@@ -28,6 +28,39 @@ func variaveis() {
 
 ````
 
-Veja que a variavel "preco" foi declarada e inicializada, ou seja, ela "nasceu" com um valor pré definidos pos nós.
+Veja que a variável "preco" foi declarada e inicializada, ou seja, ela "nasceu" com um valor pré definidos pos nós.
 
 DESAFIO: Tente supor qual os valores que as variaveis nome, idade, ehMaiorDeIdade e preco vão imprimir no console.
+
+## Inferência de tipo com ":=" (short hand):
+
+`````
+// Podemos declarar variaveis de maneira mais curta e rápida
+
+func shortHand() {
+    nome := "John""
+    sobrenome := "Doe""
+    idade := 30
+}
+
+`````
+Desta forma, o compilador "deduz" o tipo da variavel de acordo com o valor atribuido a ela. Esta forma só pode ser utilizada em funções.
+
+## Declaração de multiplas variáveis:
+
+`````
+// Podemos declarar multiplas variáveis utilizando "var" e ":=""
+
+var (
+    nome string = "Carlos""
+    idade int = 30
+    preco float64 = 30.00
+)
+
+func shortHand() {
+    nome, idade, preco := "Carlos", 30, 30.00
+}
+
+`````
+
+
