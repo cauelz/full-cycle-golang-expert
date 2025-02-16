@@ -6,7 +6,7 @@ Este repositório é um material de refência nos estudos sobre a linguagem de p
 
 obs: Não espere que seja uma cópia do curso de pós graduação, acredito que o repositório possa ter um propósito ainda maior.
 
-# POR QUE GO?
+# Por Que GO?
 
 A linguagem Go foi criada pelo Google em 2007 e trouxe consigo vários diferenciais:
 
@@ -16,5 +16,5 @@ A linguagem Go foi criada pelo Google em 2007 e trouxe consigo vários diferenci
 
 - Compilação rápida e eficiente: Sendo uma linguagem compilada, o código Go é convertido diretamente para código de máquina, garantindo alto desempenho. Além disso, um dos grandes diferenciais da linguagem é a rapidez com que seu compilador processa o código, resultando em builds ágeis e eficientes.
 
-# ORGANIZAÇÃO DO REPOSITÓRIO
+# Organização do Repositório
 
