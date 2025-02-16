@@ -1,7 +1,7 @@
 
 # Primeiro Capítulo - Variaveis e Tipos
 
-Neste primeiro capítulo vamos compreender como declarar variaveis em GO assim como seus principais tipos. GO é uma linguagem fortemente tipada, ou seja, todas as variaveis que declaramos no código precisam indicar qual tipo de dado que elas vão armazenas como Texto, Inteiro, Boleano entre outros.  
+Neste primeiro capítulo vamos compreender como declarar variaveis em GO assim como seus principais tipos. GO é uma linguagem fortemente tipada, ou seja, todas as variaveis declaradas no código precisam indicar qual tipo de dado que elas vão armazenar. Os tipos mais comuns são: texto, inteiro, boleano e ponto-flutuante.  
 
 ## Usando a palavra chave "var" (declaração explícita):
 
@@ -13,7 +13,7 @@ Exemplo 1:
 // nome do tipo texto
 // idade do tipo inteiro
 // ehMaiorDeIdade do tipo boleano
-// preco do tipo ponto flutuante
+// preco do tipo ponto-flutuante
 
 //var nome string
 //var idade int
@@ -34,6 +34,8 @@ DESAFIO: Tente supor qual os valores que as variaveis nome, idade, ehMaiorDeIdad
 
 ## Inferência de tipo com ":=" (short hand):
 
+Exemplo 2:
+
 `````
 // Podemos declarar variaveis de maneira mais curta e rápida
 
@@ -47,6 +49,8 @@ func shortHand() {
 Desta forma, o compilador "deduz" o tipo da variavel de acordo com o valor atribuido a ela. Esta forma só pode ser utilizada em funções.
 
 ## Declaração de multiplas variáveis:
+
+Exemplo 3:
 
 `````
 // Podemos declarar multiplas variáveis utilizando "var" e ":=""
