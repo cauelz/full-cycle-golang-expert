@@ -88,7 +88,7 @@ Tente alterar o valor de IDADE_LIMITE dentro da função constant e veja o que a
 
 `````
 // A linguagem Go nos permite definir nossos próprios tipos utilizando a palavra-chave type.
-// Isso possibilita deixar o codigo mais expressivo e fácil de manter.
+
 
 type Idade int
 
@@ -97,5 +97,28 @@ func createAge() {
 
     println("idade", idade)
 }
+
+`````
+Isso possibilita deixar o codigo mais expressivo e fácil de manter.
+
+## Saída de Dados com o pacote "fmt"
+
+O Pacote "fmt" nos permite imprimir valores no terminal, facilitando a visualização e a depuração das informações do nosso código. É um dos pacotes mais importantes e simples da linguagem.
+
+Vamos explorá-lo com mais detalhes no futuro.
+
+### Funcionalidades Principais
+
+1. fmt.Print
+    - imprime valores sem quebra de linha
+2. fmt.Println
+    - impreme valores com quebra de linha
+3. fmt.Printf
+    - imprimre valores formatados a partir de variaveis.
+
+`````
+fmt.Print("Texto sem quebra de linha")
+fmt.Println("Texto com quebra de linha")
+fmt.Printf("A pessoa chamada %s tem %d anos de idade!", "John", 30)
 
 `````
