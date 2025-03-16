@@ -1,7 +1,7 @@
 
 # Primeiro Capítulo - Variaveis e Tipos
 
-Neste primeiro capítulo vamos compreender como declarar variaveis em GO assim como seus principais tipos. GO é uma linguagem fortemente tipada, ou seja, todas as variaveis declaradas no código precisam indicar qual tipo de dado que elas vão armazenar. Os tipos mais comuns são: texto, inteiro, boleano e ponto-flutuante.  
+Neste primeiro capítulo vamos compreender como declarar variaveis e constantes em GO assim como seus principais tipos. GO é uma linguagem fortemente tipada, ou seja, todas as variaveis declaradas no código precisam indicar qual tipo de dado que elas vão armazenar. Os tipos mais comuns são: texto, inteiro, boleano e ponto-flutuante.  
 
 ## Usando a palavra chave "var" (declaração explícita):
 
@@ -46,7 +46,7 @@ func shortHand() {
 }
 
 `````
-Desta forma, o compilador "deduz" o tipo da variavel de acordo com o valor atribuido a ela. Esta forma só pode ser utilizada em funções.
+Desta forma, o compilador "deduz" o tipo da variavel de acordo com o valor atribuido a ela. Esta forma só pode ser utilizada em funções, excluindo o escopo global.
 
 ## Declaração de multiplas variáveis:
 
@@ -67,4 +67,35 @@ func shortHand() {
 
 `````
 
+## Declaração de Constantes:
 
+Exemplo 4:
+
+`````
+// Podemos declarar constantes utilizando a palavra "const""
+
+const IDADE_LIMITE = 18
+
+func constant() {
+    println("Idade Limite", IDADE_LIMITE)
+}
+
+`````
+
+Tente alterar o valor de IDADE_LIMITE dentro da função constant e veja o que acontece.
+
+## Criação e declaração de novos tipos:
+
+`````
+// A linguagem Go nos permite definir nossos próprios tipos utilizando a palavra-chave type.
+// Isso possibilita deixar o codigo mais expressivo e fácil de manter.
+
+type Idade int
+
+func createAge() {
+    var idade Idade = 10
+
+    println("idade", idade)
+}
+
+`````
