@@ -111,14 +111,15 @@ Vamos explorá-lo com mais detalhes no futuro.
 
 1. fmt.Print
     - imprime valores sem quebra de linha
+
 2. fmt.Println
-    - impreme valores com quebra de linha
+    - imprime valores com quebra de linha
+
 3. fmt.Printf
-    - imprimre valores formatados a partir de variaveis.
+    - imprime valores formatados a partir de variaveis.
 
 `````
 fmt.Print("Texto sem quebra de linha")
 fmt.Println("Texto com quebra de linha")
 fmt.Printf("A pessoa chamada %s tem %d anos de idade!", "John", 30)
-
 `````
