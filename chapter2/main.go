@@ -9,6 +9,6 @@ import (
 
 func main() {
 
-	fmt.Println("Arrays")
+	fmt.Println("---- Arrays ----")
 	arrays.Inicializar()
 }
