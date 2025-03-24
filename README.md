@@ -18,3 +18,5 @@ A linguagem Go foi criada pelo Google em 2007 e trouxe consigo vários diferenci
 
 # Organização do Repositório
 
+1- [Primeiro Capítulo - Variaveis e Tipos](https://github.com/cauelz/full-cycle-golang-expert/tree/master/chapter1)
+2- [Segundo Capítulo - Estruturas de Dados Nativas em Go](https://github.com/cauelz/full-cycle-golang-expert/tree/master/chapter2)
