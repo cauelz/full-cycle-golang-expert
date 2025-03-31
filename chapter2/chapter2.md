@@ -12,5 +12,4 @@ Hoje, podemos contar com as seguintes opções nativamente em Golang:
 - Maps
 - Iterações com For
 - Structs
-- Interfaces
 - Ponteiros
