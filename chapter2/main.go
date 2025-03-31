@@ -2,6 +2,7 @@ package main
 
 import (
 	"chapter2/arrays"
+	"chapter2/loops"
 	"fmt"
 )
 
@@ -13,4 +14,5 @@ func main() {
 	arrays.Inicializar()
 
 	fmt.Println("---- Loops ----")
+	loops.Inicializar()
 }
