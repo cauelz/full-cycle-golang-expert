@@ -11,4 +11,6 @@ func main() {
 
 	fmt.Println("---- Arrays ----")
 	arrays.Inicializar()
+
+	fmt.Println("---- Loops ----")
 }

@@ -1,4 +1,3 @@
-
 # Primeiro Capítulo - Variaveis e Tipos
 
 Neste primeiro capítulo vamos compreender como declarar variaveis e constantes em GO assim como seus principais tipos. GO é uma linguagem fortemente tipada, ou seja, todas as variaveis declaradas no código precisam indicar qual tipo de dado que elas vão armazenar. Os tipos mais comuns são: texto, inteiro, boleano e ponto-flutuante.  

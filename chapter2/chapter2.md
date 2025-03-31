@@ -8,8 +8,9 @@ E claro, em Golang não é diferente. A linguagem nos oferece uma gama de estrut
 Hoje, podemos contar com as seguintes opções nativamente em Golang:
 
 - Arrays
-- Iterações com "For"
 - Slices
 - Maps
+- Iterações com For
 - Structs
+- Interfaces
 - Ponteiros
