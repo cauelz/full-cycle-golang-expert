@@ -1,0 +1,6 @@
+package slices
+
+func Inicializar() {
+
+	
+}
