@@ -91,7 +91,7 @@ Vamos o assunto da seguinte maneira:
 
 A linguagem Go oferece diversas funções no pacote `os` para manipular arquivos de forma simples e eficiente. Vamos explorar as principais funções?
 
-## `os.Create()``
+## `os.Create()`
 
 Responsável por `criar` ou `truncar`(apaga o conteúdo interno) de um arquivo existente.
 
