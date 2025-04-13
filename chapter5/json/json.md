@@ -72,7 +72,7 @@ Essas tags tornam o trabalho com JSON mais flexível e adaptável às necessidad
 
 Quando trabalhamos com dados muito grandes (como arquivos de gigabytes ou streams contínuos de dados), processar tudo de uma vez pode ser ineficiente e consumir muita memória. Para lidar com esses cenários, o pacote `encoding/json` fornece as interfaces `Encoder` e `Decoder`, que permitem trabalhar diretamente com fluxos de dados (`streams`), como arquivos, conexões de rede ou buffers.
 
-(Clique aqui para saber mais sobre Streams)[https://github.com/cauelz/full-cycle-golang-expert/blob/master/chapter5/streams/streams.md]
+[Clique aqui para saber mais sobre Streams](https://github.com/cauelz/full-cycle-golang-expert/blob/master/chapter5/streams/streams.md)
 
 ## `json.NewEncoder()`
 
