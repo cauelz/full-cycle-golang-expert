@@ -1,0 +1,12 @@
+CEP: 11055-120
+Localidade: Santos
+Bairro: Boqueirão
+Logradouro: Rua Ivampa Lisboa
+Complemento: 
+Estado: São Paulo
+Unidade: 
+Regiao: Sudeste
+Ibge: 3548500
+Gia: 6336
+Ddd: 13
+Siafi: 7071
