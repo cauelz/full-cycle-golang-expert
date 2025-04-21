@@ -28,8 +28,10 @@ Este diretório contém um guia completo sobre como trabalhar com HTTP em Go, or
 ### 5. Exemplos Práticos
 - [Servidor Básico](exemplos/01-servidor-basico/)
 - [API REST](exemplos/02-api-rest/)
-- [Cliente HTTP](exemplos/03-cliente/)
+- [Cliente HTTP](exemplos/06-http-client/)
 - [Middlewares](exemplos/04-middlewares/)
+- [Segurança](exemplos/05-seguranca/)
+- [Performance](exemplos/03-performance/)
 
 ## 🎯 Como Usar Este Material
 
