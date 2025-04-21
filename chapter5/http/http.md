@@ -37,7 +37,7 @@ O pacote `net/http` foi projetado para ser uma solução completa, cobrindo desd
 
 ---
 
-## 3. Ciclo de vida de uma requisição  
+## [3. Ciclo de vida de uma requisição](ciclo-de-vida-requisicao.md)  
 
 ```mermaid
 sequenceDiagram
