@@ -33,6 +33,8 @@ func (f HandlerFunc) ServeHTTP(w ResponseWriter, r *Request) {
 ### 1.3 Exemplos de Handlers
 
 #### Handler Função
+
+
 ```go
 func helloHandler(w http.ResponseWriter, r *http.Request) {
     fmt.Fprintf(w, "Olá, Mundo!")
@@ -67,6 +69,17 @@ http.Handle("/users", handler)
 ## 2. ServeMux
 
 ### 2.1 O que é ServeMux?
+
+O conceito de multiplexador (mux) vem da eletrônica e telecomunicações. Um multiplexador é um dispositivo que seleciona uma entre várias entradas e encaminha a selecionada para uma única saída. Na eletrônica digital, multiplexadores são usados para:
+
+- Combinar múltiplos sinais em um único canal
+- Rotear diferentes entradas para uma saída específica
+- Economizar recursos compartilhando um canal
+
+No contexto HTTP, o ServeMux aplica o mesmo conceito:
+- As "entradas" são as diferentes URLs/rotas
+- A "saída" é o handler que vai processar a requisição
+- O "seletor" é o padrão de rota que determina qual handler usar
 
 ServeMux é o multiplexador HTTP padrão em Go. Ele:
 - Mapeia URLs para handlers
