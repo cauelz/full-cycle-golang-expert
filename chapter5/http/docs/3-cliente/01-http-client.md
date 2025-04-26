@@ -4,6 +4,26 @@
 
 O pacote `net/http` em Go oferece um cliente HTTP robusto e fácil de usar. Vamos explorar desde os usos mais básicos até configurações avançadas e boas práticas.
 
+## Diferença entre Cliente e Requisição HTTP
+
+É comum confundir os conceitos de "cliente" e "requisição" ao trabalhar com HTTP em Go (e em outras linguagens). Veja a diferença:
+
+- **Cliente HTTP (`http.Client`)**: É uma estrutura responsável por gerenciar a comunicação com servidores HTTP. Ele mantém configurações como timeouts, conexões reutilizáveis, proxies, etc. O cliente pode ser reutilizado para fazer várias requisições ao longo do tempo, aproveitando recursos como o reuso de conexões (keep-alive) e controle de limites.
+
+- **Requisição HTTP (`http.Request`)**: Representa uma única operação HTTP (GET, POST, etc.) que será enviada para um servidor. Cada requisição contém informações como método, URL, headers, corpo, contexto, etc. Uma requisição é criada, enviada (usando um cliente) e depois descartada.
+
+**Resumo:**
+- O **cliente** é o "agente" que envia requisições e gerencia conexões.
+- A **requisição** é a mensagem individual que será enviada pelo cliente para o servidor.
+
+Na prática, você geralmente cria um cliente (ou usa o padrão) e faz várias requisições com ele:
+
+```go
+client := &http.Client{}
+req, _ := http.NewRequest("GET", "https://exemplo.com", nil)
+resp, _ := client.Do(req)
+```
+
 ## 1. Cliente Básico
 
 ### 1.1 Funções Helper
