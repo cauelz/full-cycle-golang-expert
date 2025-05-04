@@ -38,6 +38,38 @@ func main() {
 		panic(error)
 	}
 
+	product.Name = "Macbook m2"
+
+	error = updateProduct(db, product)
+
+	if error != nil {
+		panic(error)
+	}
+
+	// product, error = selectProduct(db, product.ID)
+
+	// if error != nil {
+	// 	panic(error)
+	// }
+
+	// fmt.Printf("O produto %s tem o preço de R$ %.2f", product.Name, product.Price)
+
+	error = deleteProduct(db, product.ID)
+
+	if error != nil {
+		panic(error)
+	}
+
+	products, error := selectAllProducts(db)
+
+	if error != nil {
+		panic(error)
+	}
+
+	for _, product := range products {
+		println(product.ID, product.Name, product.Price)
+	}
+	
 }
 
 func insertProduct(db *sql.DB, product *Product) error {
@@ -51,6 +83,90 @@ func insertProduct(db *sql.DB, product *Product) error {
 	defer stmt.Close()
 
 	_, error = stmt.Exec(product.ID, product.Name, product.Price)
+
+	if error != nil {
+		return error
+	}
+
+	return nil
+}
+
+func updateProduct(db *sql.DB, product *Product) error {
+	stmt, error := db.Prepare("update products set name = ?, price = ? where id = ?")
+
+	if error != nil {
+		return error
+	}
+
+	defer stmt.Close()
+
+	_, error = stmt.Exec(product.Name, product.Price, product.ID)
+
+	if error != nil {
+		return error
+	}
+
+	return nil
+}
+
+func selectProduct(db *sql.DB, id string) (*Product, error) {
+
+	stmt, error := db.Prepare("select id, name, price from products where id = ?")
+
+	if error != nil {
+		return nil, error
+	}
+
+	defer stmt.Close()
+
+	var product Product
+
+	error = stmt.QueryRow(id).Scan(&product.ID, &product.Name, &product.Price)
+
+	if error != nil {
+		return nil, error
+	}
+
+	return &product, nil
+}
+
+func selectAllProducts(db *sql.DB) ([]*Product, error) {
+
+	rows, error := db.Query("select id, name, price from products")
+
+	if error != nil {
+		return nil, error
+	}
+
+	defer rows.Close()
+
+	var products []*Product
+
+	for rows.Next() {
+		var product Product
+
+		error = rows.Scan(&product.ID, &product.Name, &product.Price)
+
+		if error != nil {
+			return nil, error
+		}
+
+		products = append(products, &product)
+	}
+
+	return products, nil
+}
+
+func deleteProduct(db *sql.DB, id string) error {
+	stmt, error := db.Prepare("delete from products where id = ?")
+
+	if error != nil {
+		return error
+	}
+
+	defer stmt.Close()
+
+	_, error = stmt.Exec(id)
 
 	if error != nil {
 		return error
