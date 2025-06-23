@@ -1,31 +1,41 @@
 # Exercícios de Manipulação de Arquivos e Diretórios em Go
 
-Pratique os conceitos estudados resolvendo os exercícios abaixo. Tente implementar as soluções antes de consultar exemplos prontos!
+Pratique os conceitos de manipulação de arquivos e diretórios em Go resolvendo os exercícios abaixo. Cada exercício possui um enunciado detalhado em sua respectiva subpasta.
 
-## Exercícios Básicos
+## Exercícios
 
-1. Crie um arquivo chamado `ola.txt` e escreva a frase "Olá, mundo!" nele.
-2. Leia o conteúdo do arquivo `ola.txt` e imprima na tela.
-3. Crie um arquivo chamado `numeros.txt` e escreva os números de 1 a 10, um por linha.
-4. Leia o arquivo `numeros.txt` e calcule a soma dos números.
-5. Crie um diretório chamado `dados`.
-6. Liste todos os arquivos e diretórios do diretório atual.
-7. Remova o arquivo `ola.txt`.
-8. Remova o diretório `dados`.
-9. Crie um arquivo e altere suas permissões para somente leitura.
-10. Leia uma variável de ambiente chamada `USER` e imprima seu valor.
+1. **Criar e Escrever em um Arquivo**  
+   Crie um arquivo chamado `mensagem.txt` e escreva a mensagem "Olá, este é meu primeiro arquivo em Go!" nele.
 
-## Exercícios Intermediários
+2. **Ler e Exibir o Conteúdo de um Arquivo**  
+   Leia o conteúdo do arquivo `mensagem.txt` e exiba no terminal.  
+   _Bônus: Entenda por que é importante fechar o arquivo antes de ler._
 
-11. Crie um arquivo de log que registre cada execução do seu programa com data e hora.
-12. Implemente um programa que copie o conteúdo de um arquivo para outro.
-13. Crie um diretório com subdiretórios aninhados (ex: `a/b/c`).
-14. Liste apenas os arquivos (não diretórios) de uma pasta.
-15. Implemente uma função que conte quantas linhas existem em um arquivo texto.
-16. Leia um arquivo grande linha a linha usando bufio.
-17. Implemente um programa que mova um arquivo de uma pasta para outra.
-18. Crie um programa que leia e escreva arquivos em paralelo (goroutines).
-19. Implemente um programa que busque por uma palavra específica em todos os arquivos de um diretório.
-20. Crie um programa que compacte todos os arquivos de um diretório em um arquivo zip.
+3. **Adicionar Texto ao Final de um Arquivo (Append)**  
+   Abra o arquivo `mensagem.txt` no modo append e adicione uma nova linha ao final.
 
-Bons estudos! 
+4. **Contar Linhas de um Arquivo**  
+   Leia o arquivo `mensagem.txt` linha por linha e exiba o número total de linhas.
+
+5. **Copiar o Conteúdo de um Arquivo para Outro**  
+   Copie o conteúdo de `mensagem.txt` para um novo arquivo chamado `copia.txt`.
+
+6. **Buscar por uma Palavra em um Arquivo**  
+   Peça ao usuário uma palavra e exiba todas as linhas de `mensagem.txt` que a contenham.
+
+7. **Listar Arquivos de um Diretório**  
+   Liste todos os arquivos presentes no diretório atual.
+
+8. **Remover um Arquivo**  
+   Remova o arquivo `copia.txt` criado anteriormente e informe o resultado.
+
+9. **Salvar Dados em JSON em um Arquivo**  
+   Crie uma slice de structs (ex: Pessoa) e salve em um arquivo `pessoas.json` no formato JSON.
+
+10. **Ler Dados de um Arquivo JSON**  
+    Leia o arquivo `pessoas.json`, desserialize para uma slice de structs e exiba os dados no terminal.
+
+---
+
+Cada exercício possui dicas e detalhes em seu respectivo arquivo `README.md` dentro da subpasta correspondente (exemplo: `exercicio01/README.md`).  
+Explore, pratique e bons estudos! 
