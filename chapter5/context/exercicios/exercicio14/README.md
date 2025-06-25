@@ -6,5 +6,3 @@
 
 ## Enunciado
 Simule uma operação de banco de dados que pode ser cancelada via contexto.
-
-> _Relembre os exercícios 6, 7 e 9 sobre cancelamento, timeout e propagação._ 

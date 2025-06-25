@@ -7,4 +7,4 @@
 ## Enunciado
 Utilize `context.WithDeadline` para criar um contexto que expira em 500ms e mostre quando ele for cancelado.
 
-> _Relembre o exercício 7 sobre timeout em contextos._ 
+> _Relembre o exercício 3 sobre timeout em contextos._ 

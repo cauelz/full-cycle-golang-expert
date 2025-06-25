@@ -6,5 +6,3 @@
 
 ## Enunciado
 Implemente uma função que recupera um valor específico do contexto.
-
-> _Relembre o exercício 10 sobre passagem de valores no contexto._ 

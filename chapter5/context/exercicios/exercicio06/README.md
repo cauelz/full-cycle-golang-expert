@@ -6,5 +6,3 @@
 
 ## Enunciado
 Use `context.WithValue` para passar um valor (ex: userID) entre funções.
-
-> _Relembre o exercício 5 sobre criação de contextos._ 

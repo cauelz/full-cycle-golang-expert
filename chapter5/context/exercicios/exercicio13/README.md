@@ -6,5 +6,3 @@
 
 ## Enunciado
 Faça uma requisição HTTP com timeout usando contexto.
-
-> _Relembre o exercício 7 sobre timeout em contextos._ 

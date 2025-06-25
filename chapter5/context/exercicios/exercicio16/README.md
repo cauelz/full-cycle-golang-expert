@@ -6,5 +6,3 @@
 
 ## Enunciado
 Implemente um handler HTTP que respeita o cancelamento do contexto da requisição.
-
-> _Relembre os exercícios 6, 7, 8, 9 e 13 sobre cancelamento, timeout e uso em HTTP._ 

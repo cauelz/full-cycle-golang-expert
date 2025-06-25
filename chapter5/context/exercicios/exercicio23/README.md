@@ -6,5 +6,3 @@
 
 ## Enunciado
 Implemente um middleware HTTP que adiciona valores ao contexto da requisição.
-
-> _Relembre os exercícios 10, 11, 16 e 22 sobre valores no contexto, HTTP e logs._ 

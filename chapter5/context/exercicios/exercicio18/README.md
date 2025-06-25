@@ -6,5 +6,3 @@
 
 ## Enunciado
 Crie um pipeline de processamento de dados que pode ser interrompido via contexto.
-
-> _Relembre os exercícios 9, 12 e 17 sobre goroutines, cancelamento e worker pool._ 

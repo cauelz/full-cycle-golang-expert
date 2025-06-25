@@ -6,5 +6,3 @@
 
 ## Enunciado
 Implemente um worker pool onde os workers param ao cancelar o contexto.
-
-> _Relembre os exercícios 9 e 12 sobre goroutines e cancelamento._ 

@@ -7,4 +7,4 @@
 ## Enunciado
 Crie um contexto com timeout de 1 segundo usando `context.WithTimeout` e exiba uma mensagem quando o timeout ocorrer.
 
-> _Relembre os exercícios 5 e 6 sobre criação e cancelamento de contextos._ 
+> _Relembre os exercícios 1 e 2 sobre criação e cancelamento de contextos._ 

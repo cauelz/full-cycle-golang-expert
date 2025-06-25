@@ -6,5 +6,3 @@
 
 ## Enunciado
 Lance 3 goroutines que escutam o contexto e finalize todas ao cancelar o contexto.
-
-> _Relembre os exercícios 6 e 9 sobre cancelamento e propagação em goroutines._ 

@@ -6,5 +6,3 @@
 
 ## Enunciado
 Escreva um teste unitário que utiliza contexto com timeout para evitar deadlocks.
-
-> _Relembre os exercícios 7, 8 e 18 sobre timeout, deadline e pipelines._ 

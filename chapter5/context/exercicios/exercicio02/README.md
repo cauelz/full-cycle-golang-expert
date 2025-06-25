@@ -7,4 +7,4 @@
 ## Enunciado
 Implemente um contexto com cancelamento usando `context.WithCancel` e cancele o contexto após 2 segundos.
 
-> _Relembre o exercício 5 sobre criação de contextos._ 
+> _Relembre o exercício 1 sobre criação de contextos._ 
