@@ -3,6 +3,8 @@ package main
 import (
 	"fmt"
 
+	"gorm.io/gorm/clause"
+
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
 )
@@ -63,4 +65,27 @@ func main() {
 			fmt.Println("Product: ", product.Name)
 		}
 	}
+
+	// Exemplo de lock pessimista com db.Begin()
+	tx := db.Begin()
+	if tx.Error != nil {
+		panic(tx.Error)
+	}
+	var lockedProduct Product
+	// SELECT ... FOR UPDATE
+	err = tx.Clauses(clause.Locking{Strength: "UPDATE"}).First(&lockedProduct, 1).Error
+	if err != nil {
+		tx.Rollback()
+		fmt.Println("Erro ao buscar produto com lock pessimista:", err)
+		return
+	}
+	lockedProduct.Price += 10
+	if err := tx.Save(&lockedProduct).Error; err != nil {
+		tx.Rollback()
+		fmt.Println("Erro ao salvar produto:", err)
+		return
+	}
+	tx.Commit()
+	fmt.Println("Produto atualizado com lock pessimista:", lockedProduct.Name, lockedProduct.Price)
+
 }
